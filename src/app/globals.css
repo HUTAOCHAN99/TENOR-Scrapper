@@ -1,0 +1,115 @@
+:root {
+  color-scheme: light dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: #0f0f12;
+  color: #f2f2f5;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.search-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.search-input {
+  flex: 1;
+  padding: 0.65rem 0.9rem;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: #1a1a1f;
+  color: inherit;
+  font-size: 1rem;
+}
+
+.search-btn,
+.gif-btn {
+  padding: 0.65rem 1.1rem;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: #232329;
+  color: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.gif-state {
+  text-align: center;
+  color: #999;
+  padding: 3rem 0;
+}
+
+.gif-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.gif-card {
+  background: #1a1a1f;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #2a2a30;
+  display: flex;
+  flex-direction: column;
+}
+
+.gif-media {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  background: #000;
+}
+
+.gif-card-body {
+  padding: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.gif-title {
+  margin: 0;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.gif-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.gif-actions .gif-btn {
+  padding: 0.35rem 0.6rem;
+  font-size: 0.75rem;
+}
